@@ -1,32 +1,17 @@
 <template>
 
-
-  <p> {{contador}}</p>
-  <br>
-  <p><button @click="Incrementar">Incrementar</button></p>
-  <br>
-  <p><button @click="Decementar">Decementar</button></p>
+<MiContador></MiContador>
 
 </template>
 
 <script setup>
-  import {ref} from 'vue';
-  const contador = ref(0);
 
-  const Incrementar = () =>{
-    contador.value++;
-  }
+import MiContador from './components/MiContador.vue';
 
-  const Decementar = () =>{
-    contador.value--;
-  }
 </script>
 
 
 <style scoped>
 
-p{
-  color: red;
-}
 
 </style>
