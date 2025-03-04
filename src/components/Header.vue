@@ -1,11 +1,21 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <div class="header">
-       <Weather></Weather>
+        {{ mensajeRecibido }} <Weather></Weather>
     </div>
 </template>
 <script setup>
     import Weather from './Weather.vue';
+    import { defineProps, ref, watch } from 'vue';
+
+    const props = defineProps(["mensaje"]);
+    const mensajeRecibido =ref("");
+    
+    //escucho los cambios de la propiedad y seteo la variable reactiva
+    watch(()=>props.mensaje,(newValue)=>{
+        mensajeRecibido.value=newValue
+    })
+
 </script>
 <style scoped>
     .header{
