@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <div class="header">
-        <h3>La tempratura actual es: <Weather></Weather></h3>
+       <Weather></Weather>
     </div>
 </template>
 <script setup>

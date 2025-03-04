@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    {{weatherStore.temperatura}}
+    La tempratura actual es: {{weatherStore.temperatura}}°
 </template>
 <script setup>
     import { usewWeather } from '@/composables/useWeather';
