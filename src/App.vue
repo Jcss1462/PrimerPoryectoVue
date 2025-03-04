@@ -1,14 +1,9 @@
 <template>
-
-<MiContador></MiContador>
-<ListaDeTareas></ListaDeTareas>
+    <MainView></MainView>
 </template>
 
 <script setup>
-
-import MiContador from './components/MiContador.vue';
-import ListaDeTareas from './components/ListaDeTareas.vue';
-
+    import MainView from './views/MainView.vue';
 </script>
 
 
