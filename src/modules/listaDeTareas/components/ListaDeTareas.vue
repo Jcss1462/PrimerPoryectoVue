@@ -14,7 +14,7 @@
   
 <script setup>
     import { useRegistrarStore } from '@/modules/registro/stores/registrarStores';
-import { ref, watch } from 'vue';
+    import {ref} from 'vue';
 
     const registrarStore = useRegistrarStore();
     const nombre =registrarStore.nombre;
